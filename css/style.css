@@ -321,6 +321,37 @@ form textarea {
     transition: 0.4s;
 }
 
+.social-media-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Caso você tenha mais de um ícone, eles irão se ajustar corretamente */
+    height: 50vh; /* Para centralizar verticalmente dentro da viewport */
+    margin: 2rem;
+}
+
+.social-media-contact a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: solid 0.15rem var(--primary-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 1.8rem 0.5rem;
+    transition: 0.5s ease;
+}
+
+.social-media-contact a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color-01);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+}
+
 footer {
     display: flex;
     flex-direction: row;
