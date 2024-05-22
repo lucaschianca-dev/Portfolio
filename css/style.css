@@ -53,7 +53,17 @@ header {
     transition: 0.4s;
 }
 
-.nav a {
+.nav-responsive {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color-01);
+}
+
+.nav a, .nav-responsive a {
     font-size: 1.2rem;
     color: var(--secondary-color);
     padding: 0.5rem 1rem;
@@ -61,6 +71,7 @@ header {
 }
 
 .nav a:hover,
+.nav-responsive a:hover,
 .logo:hover {
     color: var(--primary-color);
 }
@@ -393,7 +404,7 @@ footer {
         display: none;
     }
 
-    .nav-responsive {
+    .nav-responsive a {
         display: block;
         font-size: 1.2rem;
         margin: 0.5rem 0;
