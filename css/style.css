@@ -79,7 +79,6 @@ header {
 section {
     min-height: 100vh;
     padding: 6rem 6rem 2rem;
-    border: solid 1px var(--color-02);
 }
 
 span {
