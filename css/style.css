@@ -238,11 +238,11 @@ span {
     align-items: center;
     text-align: center;
     padding: 0 4rem;
-    transform: translateY(5rem);
+    transform: translateY(30rem);
     transition: 0.5s ease;
 }
 
-.portfolio-box .portfolio-layer:hover {
+.portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 
 }
@@ -256,18 +256,20 @@ span {
 }
 
 .portfolio-layer a {
-    display: inline;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.5rem;
+    display: inline-flex; /* Muda para inline-flex para permitir centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     width: 3rem;
     height: 3rem;
     background: var(--secondary-color);
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
-    font-size: 1.2rem;
-    color: var(--bg-color-02);
+.portfolio-layer a:hover {
+    box-shadow: 0 0 0.7rem var(--primary-color);
+    background-color: var(--bg-color-01);
+    color: var(--primary-color);
 }
 
 form {
