@@ -92,7 +92,62 @@ span {
     border-image: linear-gradient(135deg, transparent 50%, var(--primary-color)) 1;
 }
 
+.about-img {
+    border-left: solid 0.6rem var(--primary-color);
+    border-bottom: solid 0.6rem var(--primary-color);
+    border-image: linear-gradient(225deg, transparent 50%, var(--primary-color)) 1;
+}
+
 .home-img img,
 .about-img img {
-    width: 100%;
+    width: 40%;
+}
+
+.about {
+    background-color: var(--bg-color-02);
+}
+
+.home-content,
+.about.content {
+    width: 45%;
+}
+
+.home-content h1,
+.about-content h1 {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2.7rem;
+}
+
+.home-content h3,
+.about-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.home-content p,
+.about.content p {
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+
+.services h2,
+.portfolio h2,
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services-container {
+    display: fles;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.services-container,
+.services-box {
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
 }
