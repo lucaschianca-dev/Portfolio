@@ -287,6 +287,32 @@ form textarea {
     resize: none;
 }
 
+.social-media img {
+    width: 3.5rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: solid 0.15rem var(--primary-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 1.8rem 0.5rem;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color-01);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -314,3 +340,27 @@ footer {
     color: var(--primary-color);
 }
 
+.menu-responsive {
+    display: none;
+    cursor: pointer;
+}
+
+.barra1, .barra2, .barra3 {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: var(--secondary-color);
+    margin: 0.4rem 0;
+    transition: 0.3s ease;
+}
+
+.change .barra1 {
+    transform: translate(0, 0.64rem) rotate(-45deg);
+}
+
+.change .barra2 {
+    opacity: 0;
+}
+
+.change .barra3 {
+    transform: translate(0, 0.64rem) rotate(45deg);
+}
