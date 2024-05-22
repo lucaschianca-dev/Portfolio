@@ -106,7 +106,11 @@ span {
     border-image: linear-gradient(225deg, transparent 50%, var(--primary-color)) 1;
 }
 
-.home-img img,
+.home-img img {
+    width: 100%;
+    height: auto;
+}
+
 .about-img img {
     width: 40%;
 }
